@@ -1,0 +1,18 @@
+﻿<Window x:Class="Funkcje.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Funkcje" Height="400" Width="600">
+	<Grid Background="#F0F0F0">
+		<StackPanel Margin="10">
+			<Button Name="OpenButton" Content="Otwórz plik" Click="OpenButton_Click" Background="#007ACC" Foreground="White" Margin="0 0 10 0" BorderThickness="0" Padding="10"/>
+			<Button Name="SaveButton" Content="Zapisz plik" Click="SaveButton_Click" Background="#007ACC" Foreground="White" BorderThickness="0" Padding="10"/>
+			<TextBox Name="OriginalContentTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="100" Margin="0 10 0 10" VerticalScrollBarVisibility="Auto" Background="White" BorderBrush="#007ACC" BorderThickness="1" Padding="5"/>
+			<TextBox Name="ModifiedContentTextBox" TextWrapping="Wrap" AcceptsReturn="True" Height="100" Margin="0 10 0 10" VerticalScrollBarVisibility="Auto" Background="White" BorderBrush="#007ACC" BorderThickness="1" Padding="5"/>
+			<TextBox Name="SearchTextBox" Height="30" Margin="0 10 0 10" Background="White" BorderBrush="#007ACC" BorderThickness="1" Padding="5"/>
+			<StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+				<RadioButton Name="Option1RadioButton" Content="Pierwszy " Checked="OptionRadioButton_Checked" Foreground="#007ACC"/>
+				<RadioButton Name="Option2RadioButton" Content="Drugi" Checked="OptionRadioButton_Checked" Foreground="#007ACC" Margin="10 0 0 0"/>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Window>
